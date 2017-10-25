@@ -38,6 +38,11 @@ div.toggle_account {
     font-size: 12px
 }
 
+.nav-link{
+    margin-top: 20px;
+}
+
+a.back,
 a.account {
     margin: 15px 0px;
     color:#26a69a;
@@ -62,4 +67,17 @@ form.account input[type='text'] {
 }
 span.notice{
     font-size: 11px;
+}
+
+input[type='search'] {
+    padding: 0px;
+    margin: 0px; 
+    text-indent: 10px;
+}
+
+.search-wrap-div{
+    border: 1px solid rgb(235, 235, 235);
+    padding: 0px 0px; 
+    margin: 0px; 
+    background: #ffffff;
 }
