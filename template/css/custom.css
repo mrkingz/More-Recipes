@@ -7,6 +7,11 @@
     -webkit-box-shadow: 0px 3px 8px rgb(100,100,100);
     box-shadow: 0px 3px 8px rgb(100,100,100);
 }
+.dropdown-content li,
+.dropdown-content li a{
+    font-size: 11px;
+    margin: 0px;
+}
 
 .hide{
     display: none;
@@ -42,6 +47,25 @@ div.toggle_account {
     margin-top: 20px;
 }
 
+img.favourite-size {
+    height: 100px;
+}
+
+img.recipe-size {
+    height: 140px;
+    max-height: 140;
+}
+
+.nav-tranparent{
+    background: transparent;
+    box-shadow: none;
+    color:#26a69a;   
+}
+
+a.link {
+    color:#26a69a;
+}
+
 a.back,
 a.account {
     margin: 15px 0px;
@@ -55,6 +79,7 @@ form.account input[type='text'] {
     height: 35px;
 }
 
+.caption a.header,
 .caption label.header{
     font-size: 20px;
     color: #26a69a;
@@ -75,6 +100,7 @@ input[type='search'] {
     text-indent: 10px;
 }
 
+.main,
 .search-wrap-div{
     border: 1px solid rgb(235, 235, 235);
     padding: 0px 0px; 
