@@ -51,9 +51,21 @@ img.favourite-size {
     height: 100px;
 }
 
+img.recipe {
+    height: 300px;
+    max-height: 300px;
+}
+
 img.recipe-size {
     height: 140px;
     max-height: 140;
+}
+
+.fixed-action-btn {
+    float: right;
+    position: relative;
+    left: 0px;
+    right: 0px;
 }
 
 .nav-tranparent{
@@ -101,6 +113,7 @@ input[type='search'] {
 }
 
 .main,
+.fine-line,
 .search-wrap-div{
     border: 1px solid rgb(235, 235, 235);
     padding: 0px 0px; 

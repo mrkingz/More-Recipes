@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>More-Recipes</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--link type="text/css" rel="stylesheet" href="./css/materialize.css"  media="screen, projection"/-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <link type="text/css" rel="stylesheet" href="./css/custom.css"  media="screen, projection"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body style="background-color: #FAFAFA; color: rgba(0,0,0, 0.54)">
+        <div class="container">
+            <!-- Dropdown Structure -->
+            <ul id="dropdown1" class="dropdown-content">
+                <li><a class="page-link" href="?page=recipes">My recipes</a></li>
+                <li><a class="page-link" href="?page=favourites">Favourite Recipes</a></li>
+            </ul>
+            <ul id="dropdown2" class="dropdown-content">
+                <li><a class="page-link" href="">Recipes categories</a></li>
+                <li><a class="page-link" href="">Favourite categories</a></li>
+            </ul>
+            <ul id="dropdown3" class="dropdown-content">
+                <!--li><a class="modal-trigger" href="#modal1">Profile</a></li-->
+                <li><a class="page-link" href="?page=profile">Profile</a></li>
+                <li><a class="page-link" href="">Change password</a></li>
+                <li class="divider"></li>
+                <li><a href="index.html">Signout</a></li>
+            </ul>
+            <nav class="nav-tranparent">
+                <div class="nav-wrapper caption">
+                    <a href="#!" class="header">More-Recipes</a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a class="page-link" class="link" href="?page=home&cat=1">Home</a></li>
+                        <li>
+                            <a class="dropdown-button link" href="" data-activates="dropdown2">
+                                Categories<i class="material-icons right">arrow_drop_down</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-button link" href="" data-activates="dropdown1">
+                                Catalog<i class="material-icons right">arrow_drop_down</i>
+                            </a>
+                        </li>
+                        <!-- Dropdown Trigger -->
+                        <li>
+                            <a class="dropdown-button link" href="#!" data-activates="dropdown3">
+                                <i class="material-icons left">account_circle</i> Hi, Seun!
+                                <i class="material-icons right">arrow_drop_down</i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="row" style="margin-top: 5px; margin-bottom: 0px; padding: 0px">
+                <!-- Left section-->
+                <div class="col s4 caption" style="padding-top: 30px">
+                    <label class="page-title"></label>
+                </div>
+                <div class="col s8 m8 l8 pageload">
+                    <div class="row" style="padding: 0px 10px">
+                        <div class="col s10 offset-s2 search-wrap-div" style="padding: 0px;">
+                            <input type="search" placeholder="Search more-recipes..." style="margin: 0px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row " style="padding: 0px 10px; margin-top: 0px">
+                <div class="col s12 fine-line"></div>
+                <div class="col s12 main">
+                    <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator recipe" src="images/Firecracker-Shrimp.jpg">
+                            </div>
+                            <div class="card-content">
+                        
+                                <span class="card-title activator grey-text text-darken-4">
+                                    <label style="font-size: 16px; color: rgb(25, 99, 64)">
+                                        Title: 
+                                        <label style="font-size: 16px; color: rgb(25, 99, 64)">
+                                            Firecracker and Shrimps
+                                        </label>
+                                    </label>
+                                    <div class="fixed-action-btn horizontal click-to-toggle">
+                                        <a class="btn-floating btn-large red">
+                                            <i class="material-icons">menu</i>
+                                        </a>
+                                        <ul>
+                                            <li><a class="btn-floating green"><i class="material-icons">info</i></a></li>
+                                            <li><a class="btn-floating green"><i class="material-icons">thumb_up</i></a></li>
+                                            <li><a class="btn-floating green darken-1"><i class="material-icons">edit</i></a></li>
+                                            <li><a class="btn-floating red"><i class="material-icons">delete</i></a></li>
+                                        </ul>
+                                    </div>                                
+                                </span>
+                                <p>Satisfy you taste with a delicious meal...</p>
+                            </div>
+                        </div>
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator recipe" src="images/fish_and_chips.jpg">
+                        </div>
+                        <div class="card-content">
+                    
+                            <span class="card-title activator grey-text text-darken-4">
+                                <label style="font-size: 16px; color: rgb(25, 99, 64)">
+                                    Title: 
+                                    <label style="font-size: 16px; color: rgb(25, 99, 64)">Fish and chips</label>
+                                </label>
+                                <div class="fixed-action-btn horizontal click-to-toggle">
+                                    <a class="btn-floating btn-large red">
+                                        <i class="material-icons">menu</i>
+                                    </a>
+                                    <ul>
+                                        <li><a class="btn-floating green"><i class="material-icons">info</i></a></li>
+                                        <li><a class="btn-floating green"><i class="material-icons">thumb_up</i></a></li>
+                                        <li><a class="btn-floating green darken-1"><i class="material-icons">edit</i></a></li>
+                                        <li><a class="btn-floating red"><i class="material-icons">delete</i></a></li>
+                                    </ul>
+                                </div>                                
+                            </span>
+                            <p>Satisfy you taste with a delicious meal...</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator recipe" src="images/rice.jpg">
+                        </div>
+                        <div class="card-content">
+                    
+                            <span class="card-title activator grey-text text-darken-4">
+                                <label style="font-size: 16px; color: rgb(25, 99, 64)">
+                                    Title: 
+                                    <label style="font-size: 16px; color: rgb(25, 99, 64)">Rice</label>
+                                </label>
+                                <div class="fixed-action-btn horizontal click-to-toggle">
+                                    <a class="btn-floating btn-large red">
+                                        <i class="material-icons">menu</i>
+                                    </a>
+                                    <ul>
+                                        <li><a class="btn-floating green"><i class="material-icons">info</i></a></li>
+                                        <li><a class="btn-floating green"><i class="material-icons">thumb_up</i></a></li>
+                                        <li><a class="btn-floating green darken-1"><i class="material-icons">edit</i></a></li>
+                                        <li><a class="btn-floating red"><i class="material-icons">delete</i></a></li>
+                                    </ul>
+                                </div>                                
+                            </span>
+                            <p>Satisfy you taste with a delicious meal...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal small">
+            <div class="modal-content caption">
+                <label class="header">My Profile</label>
+                <p>A bunch of text</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <script>
+            $(function(){
+                $('.modal').modal();
+                const thisTag  = $('a.page-link');
+                const pageTitle = $('label.page-title');
+                let query = location.search.substr(1).split('=');
+                switch(query[1])
+                {
+                    case 'recipes':
+                                    pageTitle.html('My '+query[1])
+                                    .css({'text-transform': 'capitalize'})
+                                    break;
+                    case 'favourites':
+                                    pageTitle.html('My favourites Recipes')
+                                    .css({'text-transform': 'capitalize'})
+                                    break;
+                    case 'profile':
+                                    pageTitle.html('My '+query[1] +' details')
+                                    .css({'text-transform': 'capitalize'})
+                                    break;
+                }
+            });
+        </script>
+    </body>
+</html>
