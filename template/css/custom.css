@@ -51,6 +51,14 @@ img.favourite-size {
     height: 100px;
 }
 
+img.user {
+    height: 250px;
+    width: 250;
+    margin: 60px 10px 0px 10px;
+    padding: 10px;
+    border: 1px solid rgb(235, 235, 235);
+}
+
 img.recipe {
     height: 300px;
     max-height: 300px;
@@ -72,6 +80,10 @@ img.recipe-size {
     background: transparent;
     box-shadow: none;
     color:#26a69a;   
+}
+
+span.details {
+    color: #26a69a
 }
 
 a.link {
@@ -112,11 +124,23 @@ input[type='search'] {
     text-indent: 10px;
 }
 
-.main,
-.fine-line,
+.fine-line {
+    border: 1px solid rgb(235, 235, 235);
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-content {
+    display: none;
+    border: 1px solid rgb(235, 235, 235);
+    padding: 0px; 
+    margin: 5px 0px 0px 0px; 
+    background: #ffffff;
+}
+
 .search-wrap-div{
     border: 1px solid rgb(235, 235, 235);
-    padding: 0px 0px; 
+    padding: 0px; 
     margin: 0px; 
     background: #ffffff;
 }

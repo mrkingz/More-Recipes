@@ -31,7 +31,7 @@
                 <div class="nav-wrapper caption">
                     <a href="#!" class="header">More-Recipes</a>
                     <ul class="right hide-on-med-and-down">
-                        <li><a class="page-link" class="link" href="?page=home&cat=1">Home</a></li>
+                        <li><a class="page-link link" href="?page=home">Home</a></li>
                         <li>
                             <a class="dropdown-button link" href="" data-activates="dropdown2">
                                 Categories<i class="material-icons right">arrow_drop_down</i>
@@ -67,7 +67,7 @@
             </div>
             <div class="row " style="padding: 0px 10px; margin-top: 0px">
                 <div class="col s12 fine-line"></div>
-                <div class="col s12 main">
+                <div class="col s12 main-content home">
                     <div class="card">
                             <div class="card-image waves-effect waves-block waves-light">
                                 <img class="activator recipe" src="images/Firecracker-Shrimp.jpg">
@@ -149,6 +149,55 @@
                         </div>
                     </div>
                 </div>
+            <!-- Profile div -->
+            <div class="col s12 main-content profile">
+                <div class="row">
+                    <div class="col s4">
+                        <img class="activator user" src="images/user.png">
+                    </div>
+                    <div class="col s8">
+                        <form class="account" method="POST" action="home.html?page=home">
+                            <div class="row">
+                                <div class="col s12">
+                                    <div class="input-field">
+                                    <input disabled class="col s8" id="firstname" type="text">
+                                    <label for="firstname">Firstname: <span class="details">Victor</span></label>
+                                    </div>
+                                </div>
+                                <div class="col s12">
+                                    <div class="input-field">
+                                        <input disabled class="col s8" id="lastname" type="text">
+                                        <label for="lastname">Lastname: <span class="details">Adukwu</span></label>
+                                    </div>
+                                </div>
+                                <div class="col s12">
+                                    <div class="input-field">
+                                        <input disabled class="col s8" id="username" type="text">
+                                        <label for="username">Username: <span class="details">victor_ng</span></label>
+                                    </div>
+                                </div>
+                                <div class="col s12">
+                                    <div class="input-field">
+                                        <input disabled class="col s8" id="email" type="email">
+                                        <label for="email">E-mail: <span class="details">victor.adukwu@gmail.com</span></label>
+                                    </div>
+                                </div>
+                                <div class="col s12">
+                                    <div class="input-field">
+                                        <input disabled class="col s8" id="phone" type="text">
+                                        <label for="phone">Phone #: <span class="details">08030141983</span></label>
+                                    </div>
+                                </div>
+                                <div class="col s12">
+                                    <div class="input-field">
+                                        <button class="btn waves-effect waves-light" onclick="return false">
+                                        <i class="material-icons left">edit</i> details
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -171,21 +220,27 @@
                 const thisTag  = $('a.page-link');
                 const pageTitle = $('label.page-title');
                 let query = location.search.substr(1).split('=');
+
                 switch(query[1])
-                {
+                {  // case 'home':  
                     case 'recipes':
                                     pageTitle.html('My '+query[1])
                                     .css({'text-transform': 'capitalize'})
+                                    query[1] = 'home';
                                     break;
                     case 'favourites':
                                     pageTitle.html('My favourites Recipes')
                                     .css({'text-transform': 'capitalize'})
+                                    query[1] = 'home';
                                     break;
                     case 'profile':
                                     pageTitle.html('My '+query[1] +' details')
                                     .css({'text-transform': 'capitalize'})
+                                    
                                     break;
                 }
+
+                $('.'+query[1]).css({'display': 'block'})
             });
         </script>
     </body>
