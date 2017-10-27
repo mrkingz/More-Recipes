@@ -11,4 +11,9 @@ recipeRouter.put(
   '/api/v1/recipes/:recipeId',
   RecipeController.updateRecipe()
 );
+
+recipeRouter.post(
+  '/api/v1/recipes/:recipeId/reviews',
+  RecipeController.postReview()
+);
 export default recipeRouter;

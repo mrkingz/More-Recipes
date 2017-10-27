@@ -1,6 +1,6 @@
 import recipeRoutes from './recipeRoutes';
 
 const routes = {
-    recipeRoutes
-}
+  recipeRoutes
+};
 export default routes;

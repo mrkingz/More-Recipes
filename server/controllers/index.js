@@ -1,7 +1,7 @@
 import recipeController from './recipeController';
 
 const controllers = {
-    recipeController
-}
+  recipeController,
+};
 
 export default controllers;
