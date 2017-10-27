@@ -51,6 +51,22 @@ img.favourite-size {
     height: 100px;
 }
 
+.icon-label {
+    font-size: 10px
+}
+
+.fine-border {
+    border: 1px solid rgb(235, 235, 235);
+}
+
+img.recipe_photo {
+    height: 300px;
+    width: 250;
+    margin-top: 20px;
+    padding: 5px;
+    border: 1px solid rgb(235, 235, 235);
+}
+
 img.user {
     height: 250px;
     width: 250;
@@ -69,7 +85,7 @@ img.recipe-size {
     max-height: 140;
 }
 
-.fixed-action-btn {
+.action-btn {
     float: right;
     position: relative;
     left: 0px;

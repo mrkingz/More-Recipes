@@ -31,7 +31,7 @@
                 <div class="nav-wrapper caption">
                     <a href="#!" class="header">More-Recipes</a>
                     <ul class="right hide-on-med-and-down">
-                        <li><a class="page-link link" href="?page=home">Home</a></li>
+                        <li><a class="page-link link" href="?page=recipes">Home</a></li>
                         <li>
                             <a class="dropdown-button link" href="" data-activates="dropdown2">
                                 Categories<i class="material-icons right">arrow_drop_down</i>
@@ -70,24 +70,26 @@
                 <div class="col s12 main-content home">
                     <div class="card">
                             <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator recipe" src="images/Firecracker-Shrimp.jpg">
+                                <img class="activator recipe recipe1" src="images/Firecracker-Shrimp.jpg">
                             </div>
                             <div class="card-content">
-                        
                                 <span class="card-title activator grey-text text-darken-4">
                                     <label style="font-size: 16px; color: rgb(25, 99, 64)">
                                         Title: 
-                                        <label style="font-size: 16px; color: rgb(25, 99, 64)">
+                                        <label class="recipe_title1" style="font-size: 16px; color: rgb(25, 99, 64)">
                                             Firecracker and Shrimps
                                         </label>
                                     </label>
-                                    <div class="fixed-action-btn horizontal click-to-toggle">
-                                        <a class="btn-floating btn-large red">
+                                    <div class="fixed-action-btn action-btn horizontal click-to-toggle">
+                                        <a class="btn-floating btn-large">
                                             <i class="material-icons">menu</i>
                                         </a>
                                         <ul>
-                                            <li><a class="btn-floating green"><i class="material-icons">info</i></a></li>
+                                            <li><a class="btn-floating" id="1" href="?page=details&id=1"><i class="material-icons">info</i></a></li>
+                                            <li><a class="btn-floating blue"><i class="material-icons">comment</i></a></li>
                                             <li><a class="btn-floating green"><i class="material-icons">thumb_up</i></a></li>
+                                            <li><a class="btn-floating red"><i class="material-icons">thumb_down</i></a></li>
+                                            <li><a class="btn-floating green"><i class="material-icons">star</i></a></li>
                                             <li><a class="btn-floating green darken-1"><i class="material-icons">edit</i></a></li>
                                             <li><a class="btn-floating red"><i class="material-icons">delete</i></a></li>
                                         </ul>
@@ -98,119 +100,187 @@
                         </div>
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator recipe" src="images/fish_and_chips.jpg">
+                            <img class="activator recipe recipe2" src="images/fish_and_chips.jpg">
                         </div>
                         <div class="card-content">
-                    
                             <span class="card-title activator grey-text text-darken-4">
                                 <label style="font-size: 16px; color: rgb(25, 99, 64)">
                                     Title: 
-                                    <label style="font-size: 16px; color: rgb(25, 99, 64)">Fish and chips</label>
+                                    <label class="recipe_title2"  style="font-size: 16px; color: rgb(25, 99, 64)">
+                                        Fish and chips
+                                    </label>
                                 </label>
-                                <div class="fixed-action-btn horizontal click-to-toggle">
-                                    <a class="btn-floating btn-large red">
+                                <div class="fixed-action-btn action-btn horizontal click-to-toggle">
+                                    <a class="btn-floating btn-large">
                                         <i class="material-icons">menu</i>
                                     </a>
                                     <ul>
-                                        <li><a class="btn-floating green"><i class="material-icons">info</i></a></li>
+                                        <li><a class="btn-floating" id="2" href="?page=details&id=1"><i class="material-icons">info</i></a></li>
+                                        <li><a class="btn-floating blue"><i class="material-icons">comment</i></a></li>
                                         <li><a class="btn-floating green"><i class="material-icons">thumb_up</i></a></li>
+                                        <li><a class="btn-floating red"><i class="material-icons">thumb_down</i></a></li>
+                                        <li><a class="btn-floating green"><i class="material-icons">star</i></a></li>
                                         <li><a class="btn-floating green darken-1"><i class="material-icons">edit</i></a></li>
                                         <li><a class="btn-floating red"><i class="material-icons">delete</i></a></li>
                                     </ul>
-                                </div>                                
+                                </div>                               
                             </span>
                             <p>Satisfy you taste with a delicious meal...</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator recipe" src="images/rice.jpg">
+                            <img class="activator recipe recipe3" src="images/rice.jpg">
                         </div>
                         <div class="card-content">
                     
                             <span class="card-title activator grey-text text-darken-4">
                                 <label style="font-size: 16px; color: rgb(25, 99, 64)">
                                     Title: 
-                                    <label style="font-size: 16px; color: rgb(25, 99, 64)">Rice</label>
+                                    <label class="recipe_title3"  style="font-size: 16px; color: rgb(25, 99, 64)">Rice</label>
                                 </label>
-                                <div class="fixed-action-btn horizontal click-to-toggle">
-                                    <a class="btn-floating btn-large red">
+                                <div class="fixed-action-btn action-btn horizontal click-to-toggle">
+                                    <a class="btn-floating btn-large">
                                         <i class="material-icons">menu</i>
                                     </a>
                                     <ul>
-                                        <li><a class="btn-floating green"><i class="material-icons">info</i></a></li>
+                                        <li><a class="btn-floating" id="3" href="?page=details&id=1"><i class="material-icons">info</i></a></li>
+                                        <li><a class="btn-floating blue"><i class="material-icons">comment</i></a></li>
                                         <li><a class="btn-floating green"><i class="material-icons">thumb_up</i></a></li>
+                                        <li><a class="btn-floating red"><i class="material-icons">thumb_down</i></a></li>
+                                        <li><a class="btn-floating green"><i class="material-icons">star</i></a></li>
                                         <li><a class="btn-floating green darken-1"><i class="material-icons">edit</i></a></li>
                                         <li><a class="btn-floating red"><i class="material-icons">delete</i></a></li>
                                     </ul>
-                                </div>                                
+                                </div>                                 
                             </span>
                             <p>Satisfy you taste with a delicious meal...</p>
                         </div>
                     </div>
                 </div>
-            <!-- Profile div -->
-            <div class="col s12 main-content profile">
-                <div class="row">
-                    <div class="col s4">
-                        <img class="activator user" src="images/user.png">
-                    </div>
-                    <div class="col s8">
-                        <form class="account" method="POST" action="home.html?page=home">
+
+                <!-- Details div -->
+                <div class="col s12 main-content details">
+                    <div class="row">
+                        <div class="col s6">
                             <div class="row">
                                 <div class="col s12">
-                                    <div class="input-field">
-                                    <input disabled class="col s8" id="firstname" type="text">
-                                    <label for="firstname">Firstname: <span class="details">Victor</span></label>
-                                    </div>
+                                    <img class="activator recipe_photo">
                                 </div>
-                                <div class="col s12">
-                                    <div class="input-field">
-                                        <input disabled class="col s8" id="lastname" type="text">
-                                        <label for="lastname">Lastname: <span class="details">Adukwu</span></label>
-                                    </div>
+                                <div class="col">
+                                    <i class="material-icons left">thumb_up</i>
+                                    <label class="icon-label">(21)</label>
                                 </div>
-                                <div class="col s12">
-                                    <div class="input-field">
-                                        <input disabled class="col s8" id="username" type="text">
-                                        <label for="username">Username: <span class="details">victor_ng</span></label>
-                                    </div>
+                                <div class="col">
+                                    <i class="material-icons left">thumb_down</i>
+                                    <label class="icon-label">(11)</label>
                                 </div>
-                                <div class="col s12">
-                                    <div class="input-field">
-                                        <input disabled class="col s8" id="email" type="email">
-                                        <label for="email">E-mail: <span class="details">victor.adukwu@gmail.com</span></label>
-                                    </div>
-                                </div>
-                                <div class="col s12">
-                                    <div class="input-field">
-                                        <input disabled class="col s8" id="phone" type="text">
-                                        <label for="phone">Phone #: <span class="details">08030141983</span></label>
-                                    </div>
-                                </div>
-                                <div class="col s12">
-                                    <div class="input-field">
-                                        <button class="btn waves-effect waves-light" onclick="return false">
-                                        <i class="material-icons left">edit</i> details
-                                    </button>
+                                <div class="col">
+                                    <i class="material-icons left">star</i>
+                                    <span class="icon-label">(42)</span>
                                 </div>
                             </div>
-                        </form>
+                        </div>
+                        <div class="col s6" style="padding: 15px">
+                            <div class="row">
+                                <div class="col s12">
+                                    <label>Instrubctions</label>
+                                    <ol>
+                                        <li>Per boil the rice for 30 mins</li>
+                                        <li>Blend the pepper</li>
+                                        <li>Slice the onion</li>
+                                        <li>Add vegetable oil</li>
+                                        <li>...</li>
+                                    </ol>
+                                </div>
+                                <div class="col s12">
+                                     <label>Ingredients:</label>
+                                     <ol>
+                                         <li>Pepper</li>
+                                         <li>Salt</li>
+                                         <li>Vegetable oil</li>
+                                         <li>Onion</li>
+                                         <li>...</li>
+                                     </ol>
+                                </div>
+                            </div>
+                            <div class="fixed-action-btn horizontal click-to-toggle">
+                                <a class="btn-floating btn-large">
+                                <i class="material-icons">menu</i>
+                                </a>
+                                <ul>
+                                <li><a class="btn-floating"><i class="material-icons">thumb_up</i></a></li>
+                                <li><a class="btn-floating red"><i class="material-icons">thumb_down</i></a></li>
+                                <li><a class="btn-floating"><i class="material-icons">star</i></a></li>
+                                <li><a class="btn-floating blue"><i class="material-icons">comment</i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+
+                <!-- Profile div -->
+                <div class="col s12 main-content profile">
+                    <div class="row">
+                        <div class="col s4">
+                            <img class="activator user" src="images/user.png">
+                        </div>
+                        <div class="col s8">
+                            <form class="account" method="POST" action="home.html?page=home">
+                                <div class="row">
+                                    <div class="col s12">
+                                        <div class="input-field">
+                                        <input disabled class="col s8" id="firstname" type="text">
+                                        <label for="firstname">Firstname: <span class="details">Victor</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="col s12">
+                                        <div class="input-field">
+                                            <input disabled class="col s8" id="lastname" type="text">
+                                            <label for="lastname">Lastname: <span class="details">Adukwu</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="col s12">
+                                        <div class="input-field">
+                                            <input disabled class="col s8" id="username" type="text">
+                                            <label for="username">Username: <span class="details">victor_ng</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="col s12">
+                                        <div class="input-field">
+                                            <input disabled class="col s8" id="email" type="email">
+                                            <label for="email">E-mail: <span class="details">victor.adukwu@gmail.com</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="col s12">
+                                        <div class="input-field">
+                                            <input disabled class="col s8" id="phone" type="text">
+                                            <label for="phone">Phone #: <span class="details">08030141983</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="col s12">
+                                        <div class="input-field">
+                                            <button class="btn waves-effect waves-light" onclick="return false">
+                                            <i class="material-icons left">edit</i> details
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Modal Structure -->
-        <div id="modal1" class="modal small">
-            <div class="modal-content caption">
-                <label class="header">My Profile</label>
-                <p>A bunch of text</p>
+            <!-- Modal Structure -->
+            <div id="modal1" class="modal small">
+                <div class="modal-content caption">
+                    <label class="header">My Profile</label>
+                    <p>A bunch of text</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+                </div>
             </div>
-            <div class="modal-footer">
-                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
-            </div>
-        </div>
         
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
@@ -219,28 +289,47 @@
                 $('.modal').modal();
                 const thisTag  = $('a.page-link');
                 const pageTitle = $('label.page-title');
-                let query = location.search.substr(1).split('=');
+                let query  = location.search.substr(1), page, recipeTitle, photo;
+                if(query.indexOf('&') === - 1)
+                {    
+                    query = query.substr(1).split('=');
+                    page = query[1]
+                }
+                else
+                {
+                    const array = query.split('&');
+                    query = array[0].split('=')
+                    page = query[1];
 
-                switch(query[1])
-                {  // case 'home':  
+                    //Get the id of recipe from the query params
+                    query = array[1].split('=');
+                    recipeTitle = $('.recipe_title'+query[1]).html();
+                    photo = $('img.recipe'+query[1]).prop('src')
+                    $('img.recipe_photo').attr({'src': photo});
+                }
+
+                switch(page)
+                {
                     case 'recipes':
-                                    pageTitle.html('My '+query[1])
+                                    pageTitle.html('My '+page)
                                     .css({'text-transform': 'capitalize'})
-                                    query[1] = 'home';
+                                    page = 'home';
                                     break;
                     case 'favourites':
                                     pageTitle.html('My favourites Recipes')
                                     .css({'text-transform': 'capitalize'})
-                                    query[1] = 'home';
+                                    page = 'home';
                                     break;
                     case 'profile':
-                                    pageTitle.html('My '+query[1] +' details')
+                                    pageTitle.html('My '+page +' details')
                                     .css({'text-transform': 'capitalize'})
-                                    
                                     break;
+                    case 'details':
+                                    pageTitle.html('Recipe '+page)
+                                    .css({'text-transform': 'capitalize'})
                 }
 
-                $('.'+query[1]).css({'display': 'block'})
+                $('.'+page).css({'display': 'block'})
             });
         </script>
     </body>
