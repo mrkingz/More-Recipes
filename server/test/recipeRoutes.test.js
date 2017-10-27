@@ -6,7 +6,7 @@ import app from '../../app.js';
 const expect = chai.expect,
       server = supertest.agent(app);
 
-describe('RecipeController', () => {
+describe('RecipeRoute', () => {
     const recipe = {
         recipeId: 1,
         recipeTitle: 'Jollof Rice',
@@ -22,6 +22,16 @@ describe('RecipeController', () => {
         .end((err, res) => {
             expect(res).to.be.an('object');
             expect(res.statusCode).to.equal(201);
+            return done();
+        })
+    })
+    it('should return json', (done) => {
+        server
+        .get(`/api/v1/recipes`)
+        .send(recipe)
+        .end((err, res) => {
+            expect(res).to.be.an('object');
+            expect(res.statusCode).to.equal(200);
             return done();
         })
     })

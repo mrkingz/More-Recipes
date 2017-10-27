@@ -5,4 +5,4 @@ const recipeRouter = express.Router();
 
 recipeRouter.route('/api/v1/recipes')
 .post(RecipeController.createRecipe())
-export default recipeRouter;
+.get(RecipeController.getRecipes());
