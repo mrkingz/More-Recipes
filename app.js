@@ -14,4 +14,5 @@ app.use(routes.recipeRoutes);
 app.all('/api', (req, res) => {
   res.status('200').send('Connection ok');
 });
+
 export default app;
