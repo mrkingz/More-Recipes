@@ -1,6 +1,7 @@
 import chai from 'chai';
 import supertest from 'supertest';
 import RecipeController from '../controllers/recipeController';
+import app from '../../app.js';
 
 const expect = chai.expect,
       server = supertest.agent(app);
@@ -17,11 +18,10 @@ describe('RecipeController', () => {
     it('should return json', (done) => {
         server
         .post(`/api/v1/recipes`)
+        .send(recipe)
         .end((err, res) => {
-            const middleware = ValidationService.isValidIntegerURI();
-            expect(middleware).to.be.a('function');
-            expect(res.body).to.be.an('object');
-            expect(res.statusCode).to.equal(400);
+            expect(res).to.be.an('object');
+            expect(res.statusCode).to.equal(201);
             return done();
         })
     })
