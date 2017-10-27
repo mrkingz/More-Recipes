@@ -2,18 +2,33 @@ import chai from 'chai';
 import supertest from 'supertest';
 import app from '../../app';
 
+const recipe = [{
+  recipeId: 1,
+  recipeTitle: 'Jollof Rice and chicken',
+  instructions: 'Per boil and cook for 30 minutes',
+  ingredients: 'Rice, vegetable oil',
+  upVote: 10,
+  downVote: 3
+}, {
+  recipeId: 1,
+  recipeTitle: 'Rice and plantain',
+  instructions: 'Per boil and cook for 30 minutes',
+  ingredients: 'Rice, vegetable oil',
+  upVote: 7,
+  downVote: 6
+}, {
+  recipeId: 1,
+  recipeTitle: 'Jollof Rice and beans',
+  instructions: 'Per boil and cook for 30 minutes',
+  ingredients: 'Rice, vegetable oil',
+  upVote: 2,
+  downVote: 9
+}];
+
 const expect = chai.expect,
   server = supertest.agent(app);
 
 describe('RecipeRoute', () => {
-  const recipe = {
-    recipeId: 1,
-    recipeTitle: 'Jollof Rice',
-    instructions: 'Per boil and cook for 30 minutes',
-    ingredients: 'Rice, vegetable oil',
-    upVote: 0,
-    downVote: 2
-  };
   it('should return json', (done) => {
     server
       .post('/api/v1/recipes')
@@ -34,17 +49,18 @@ describe('RecipeRoute', () => {
         return done();
       });
   });
-  it('should update a recipe', (done) => {
+
+  it('should return recipe not found fo invalid recipeId', (done) => {
     const update = {
       recipeId: 1,
       recipeTitle: 'Jollof rice and beans'
     };
     server
-      .put('/api/v1/recipes/1')
+      .put('/api/v1/recipes/99')
       .send(update)
       .end((err, res) => {
         expect(res).to.be.an('object');
-        expect(res.statusCode).to.equal(200);
+        expect(res.statusCode).to.equal(404);
         return done();
       });
   });

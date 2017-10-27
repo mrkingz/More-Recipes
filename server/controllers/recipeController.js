@@ -1,9 +1,37 @@
+const review = [{
+  reviewId: 1,
+  recipeId: 1,
+  userId: 1,
+  comment: 'Nice recipe, bro! Feeling so yummy already...',
+}];
 
-const recipes = [];
+const recipes = [{
+  recipeId: 1,
+  recipeTitle: 'Jollof Rice and chicken',
+  instructions: 'Per boil and cook for 30 minutes',
+  ingredients: 'Rice, vegetable oil',
+  upvote: 10,
+  downvote: 3
+}, {
+  recipeId: 2,
+  recipeTitle: 'Rice and plantain',
+  instructions: 'Per boil and cook for 30 minutes',
+  ingredients: 'Rice, vegetable oil',
+  upvote: 17,
+  downvote: 6
+}, {
+  recipeId: 3,
+  recipeTitle: 'Jollof Rice and beans',
+  instructions: 'Per boil and cook for 30 minutes',
+  ingredients: 'Rice, vegetable oil',
+  upvote: 2,
+  downvote: 9
+}];
+
 /**
  * @class RecipeController
  */
-class RecipeController {
+export default class RecipeController {
   /**
    * @description Creates a new Recipe
    * @static
@@ -12,7 +40,6 @@ class RecipeController {
    */
   static createRecipe() {
     return (req, res) => {
-      //req.body.recipeId = recipes.length + 1;
       recipes.push(req.body);
       res.status(201).json({
         success: true,
@@ -71,5 +98,35 @@ class RecipeController {
       }
     };
   }
+
+  /**
+   * @description Post a review on a recipe
+   * @static
+   * @memberof RecipeController
+   * @returns {Function} A middleware funtion that handles the Post request
+   */
+  static postReview() {
+    return (req, res) => {
+      let found = false;
+      for (let i = 0; i < recipes.length; i += 1) {
+        if (parseInt(recipes[i].recipeId, 10) === parseInt(req.params.recipeId, 10)) {
+          found = true;
+          break;
+        } else {
+          return res.status(404).send({
+            success: false,
+            message: 'Recipe does not exist',
+          });
+        }
+      }
+      if (found) {
+        review.push(req.body);
+        res.status(201).send({
+          success: true,
+          message: 'Review successfully posted',
+          date: req.body
+        });
+      }
+    };
+  }
 }
-export default RecipeController;
