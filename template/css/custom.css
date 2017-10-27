@@ -1,0 +1,162 @@
+.wrap {
+    border: 1px solid grey;  
+}
+.shadow {
+    margin-top: 50px;
+    -moz-box-shadow: 0px 3px 8px rgb(100,100,100);
+    -webkit-box-shadow: 0px 3px 8px rgb(100,100,100);
+    box-shadow: 0px 3px 8px rgb(100,100,100);
+}
+.dropdown-content li,
+.dropdown-content li a{
+    font-size: 11px;
+    margin: 0px;
+}
+
+.hide{
+    display: none;
+}
+
+.notice {
+    color: darkred; 
+}
+
+form.account {
+    margin-bottom: 80px;
+    padding-top: 40px;
+}
+
+form.account div.row {
+    margin-bottom: 5px
+}
+
+a.recovery  {
+    margin: 10px 0px;
+    font-size: 12px; 
+    color: brown; 
+    float: right
+}
+div.toggle_account {
+    margin: 10px 0px;
+    direction: rtl; 
+    color: gray; 
+    font-size: 12px
+}
+
+.nav-link{
+    margin-top: 20px;
+}
+
+img.favourite-size {
+    height: 100px;
+}
+
+.icon-label {
+    font-size: 10px
+}
+
+.fine-border {
+    border: 1px solid rgb(235, 235, 235);
+}
+
+img.recipe_photo {
+    height: 300px;
+    width: 250;
+    margin-top: 20px;
+    padding: 5px;
+    border: 1px solid rgb(235, 235, 235);
+}
+
+img.user {
+    height: 250px;
+    width: 250;
+    margin: 60px 10px 0px 10px;
+    padding: 10px;
+    border: 1px solid rgb(235, 235, 235);
+}
+
+img.recipe {
+    height: 300px;
+    max-height: 300px;
+}
+
+img.recipe-size {
+    height: 140px;
+    max-height: 140;
+}
+
+.action-btn {
+    float: right;
+    position: relative;
+    left: 0px;
+    right: 0px;
+}
+
+.nav-tranparent{
+    background: transparent;
+    box-shadow: none;
+    color:#26a69a;   
+}
+
+span.details {
+    color: #26a69a
+}
+
+a.link {
+    color:#26a69a;
+}
+
+a.back,
+a.account {
+    margin: 15px 0px;
+    color:#26a69a;
+}
+
+form.account input[type='email'],
+form.account input[type='password'],
+form.account input[type='text'] {
+    margin-bottom: 0px; 
+    height: 35px;
+}
+
+.caption a.header,
+.caption label.header{
+    font-size: 20px;
+    color: #26a69a;
+    font-weight: bold;
+}
+.caption label.action{
+    font-size: 14px;
+    color:  #26a69a;
+    font-weight: bold
+}
+span.notice{
+    font-size: 11px;
+}
+
+input[type='search'] {
+    padding: 0px;
+    margin: 0px; 
+    text-indent: 10px;
+}
+
+.fine-line {
+    border: 1px solid rgb(235, 235, 235);
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-content {
+    display: none;
+    border: 1px solid rgb(235, 235, 235);
+    padding: 0px; 
+    margin: 5px 0px 0px 0px; 
+    background: #ffffff;
+}
+
+.search-wrap-div{
+    border: 1px solid rgb(235, 235, 235);
+    padding: 0px; 
+    margin: 0px; 
+    background: #ffffff;
+}
