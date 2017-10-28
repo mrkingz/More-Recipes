@@ -16,4 +16,9 @@ recipeRouter.post(
   '/api/v1/recipes/:recipeId/reviews',
   RecipeController.postReview()
 );
+
+recipeRouter.delete(
+  '/api/v1/recipes/:recipeId',
+  RecipeController.deleteRecipe()
+);
 export default recipeRouter;

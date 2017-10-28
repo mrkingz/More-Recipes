@@ -13,6 +13,7 @@
         <div class="container">
             <!-- Dropdown Structure -->
             <ul id="dropdown1" class="dropdown-content">
+                <li><a class="page-link" href="?page=add_recipe">Add recipe</a></li>
                 <li><a class="page-link" href="?page=recipes">My recipes</a></li>
                 <li><a class="page-link" href="?page=favourites">Favourite Recipes</a></li>
             </ul>
@@ -69,35 +70,35 @@
                 <div class="col s12 fine-line"></div>
                 <div class="col s12 main-content home">
                     <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator recipe recipe1" src="images/Firecracker-Shrimp.jpg">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">
-                                    <label style="font-size: 16px; color: rgb(25, 99, 64)">
-                                        Title: 
-                                        <label class="recipe_title1" style="font-size: 16px; color: rgb(25, 99, 64)">
-                                            Firecracker and Shrimps
-                                        </label>
-                                    </label>
-                                    <div class="fixed-action-btn action-btn horizontal click-to-toggle">
-                                        <a class="btn-floating btn-large">
-                                            <i class="material-icons">menu</i>
-                                        </a>
-                                        <ul>
-                                            <li><a class="btn-floating" id="1" href="?page=details&id=1"><i class="material-icons">info</i></a></li>
-                                            <li><a class="btn-floating blue"><i class="material-icons">comment</i></a></li>
-                                            <li><a class="btn-floating green"><i class="material-icons">thumb_up</i></a></li>
-                                            <li><a class="btn-floating red"><i class="material-icons">thumb_down</i></a></li>
-                                            <li><a class="btn-floating green"><i class="material-icons">star</i></a></li>
-                                            <li><a class="btn-floating green darken-1"><i class="material-icons">edit</i></a></li>
-                                            <li><a class="btn-floating red"><i class="material-icons">delete</i></a></li>
-                                        </ul>
-                                    </div>                                
-                                </span>
-                                <p>Satisfy you taste with a delicious meal...</p>
-                            </div>
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator recipe recipe1" src="images/Firecracker-Shrimp.jpg">
                         </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">
+                                <label style="font-size: 16px; color: rgb(25, 99, 64)">
+                                    Title: 
+                                    <label class="recipe_title1" style="font-size: 16px; color: rgb(25, 99, 64)">
+                                        Firecracker and Shrimps
+                                    </label>
+                                </label>
+                                <div class="fixed-action-btn action-btn horizontal click-to-toggle">
+                                    <a class="btn-floating btn-large">
+                                        <i class="material-icons">menu</i>
+                                    </a>
+                                    <ul>
+                                        <li><a class="btn-floating" id="1" href="?page=details&id=1"><i class="material-icons">info</i></a></li>
+                                        <li><a class="btn-floating blue"><i class="material-icons">comment</i></a></li>
+                                        <li><a class="btn-floating green"><i class="material-icons">thumb_up</i></a></li>
+                                        <li><a class="btn-floating red"><i class="material-icons">thumb_down</i></a></li>
+                                        <li><a class="btn-floating green"><i class="material-icons">star</i></a></li>
+                                        <li><a class="btn-floating green darken-1"><i class="material-icons">edit</i></a></li>
+                                        <li><a class="btn-floating red"><i class="material-icons">delete</i></a></li>
+                                    </ul>
+                                </div>                                
+                            </span>
+                            <p>Satisfy you taste with a delicious meal...</p>
+                        </div>
+                    </div>
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator recipe recipe2" src="images/fish_and_chips.jpg">
@@ -217,7 +218,7 @@
                             </div>
                         </div>
                     </div>    
-                </div>
+                </div>              
 
                 <!-- Profile div -->
                 <div class="col s12 main-content profile">
@@ -261,7 +262,7 @@
                                     <div class="col s12">
                                         <div class="input-field">
                                             <button class="btn waves-effect waves-light" onclick="return false">
-                                            <i class="material-icons left">edit</i> details
+                                            <i class="material-icons left">edit</i> 
                                         </button>
                                     </div>
                                 </div>
@@ -270,6 +271,67 @@
                     </div>
                 </div>
             </div>
+
+                <!-- Profile div -->
+                <div class="col s12 main-content add_recipe">
+                    <form class="account" method="POST" action="home.html?page=home">
+                        <div class="row">
+                            <div class="col s6">
+                                <div class="row">
+                                    <div class="input-field col s10 offset-s1">
+                                        <input id="recipe_title" type="text" class="validate" autocomplete="off">
+                                        <label for="recipe_title">Recipe title</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="file-field input-field col s10 offset-s1">
+                                        <div class="btn" style="background: teal lighten-5">
+                                            <span>Photo</span>
+                                            <input type="file">
+                                        </div>
+                                        <div class="file-path-wrapper">
+                                            <input class="file-path validate" type="text">
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="row">
+                                    <div class="col s11 offset-s1">
+                                        <button type="submit" class="btn col s3 push-s8">submit post</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s6">
+                                <div class="row">
+                                    <div class="col s12">
+                                        <label>Instrubctions</label>
+                                        <ol>
+                                            <li>Per boil the rice for 30 mins</li>
+                                            <li>Blend the pepper</li>
+                                            <li>Slice the onion</li>
+                                            <li>Add vegetable oil</li>
+                                            <li>...</li>
+                                        </ol>
+                                    </div>
+                                    <div class="col s12">
+                                        <label>Ingredients:</label>
+                                        <ol>
+                                            <li>Pepper</li>
+                                            <li>Salt</li>
+                                            <li>Vegetable oil</li>
+                                            <li>Onion</li>
+                                            <li>...</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s11 offset-s1">
+                                        <a class="btn col s2 pull-s1">More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>  
 
             <!-- Modal Structure -->
             <div id="modal1" class="modal small">
@@ -310,6 +372,11 @@
 
                 switch(page)
                 {
+                    case 'add_recipe':
+                                    pageTitle.html('New recipe')
+                                    .css({'text-transform': 'capitalize'})
+                                    //page = 'home';
+                                    break;
                     case 'recipes':
                                     pageTitle.html('My '+page)
                                     .css({'text-transform': 'capitalize'})
