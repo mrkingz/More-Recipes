@@ -20,7 +20,7 @@ const recipes = [{
   upvote: 17,
   downvote: 6
 }, {
-  recipeId: 3,
+  recipeId: 3, 
   recipeTitle: 'Jollof Rice and beans',
   instructions: 'Per boil and cook for 30 minutes',
   ingredients: 'Rice, vegetable oil',
@@ -58,10 +58,10 @@ export default class RecipeController {
   static getRecipes() {
     return (req, res) => {
       if (!req.query.sort) {
-        res.status(200).send(recipes);
+        res.status(200).json(recipes);
       } else {
         const results = recipes.sort((a, b) => (b.upvote - a.upvote));
-        res.status(200).send(results);
+        res.status(200).json(results);
       }
     };
   }
@@ -90,6 +90,7 @@ export default class RecipeController {
           });
         }
       }
+
       if (notFound) {
         res.status(404).json({
           status: 'fail',
@@ -115,7 +116,7 @@ export default class RecipeController {
         }
       }
 
-      res.status(200).send({
+      res.status(200).json({
         status: (notFound) ? 'fail' : 'success',
         message: (notFound) ? 'Recipe does not exist' : 'recipe successfully delete'
       });
@@ -142,6 +143,7 @@ export default class RecipeController {
           });
         }
       }
+
       if (found) {
         review.push(req.body);
         res.status(201).send({
